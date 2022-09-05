@@ -1,0 +1,293 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	color: #222222;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header{
+	min-height: 75px;
+	background-color: #5b5d9f;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 1;
+	
+}
+
+.header-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px 0;
+	position: relative;
+}
+
+.header-title{
+	font-size: 24px;
+	font-weight: 900;
+	color: white;
+	text-transform: uppercase;
+}
+
+.btn-cart{
+padding-top: 15px;
+background: transparent;
+border: none;
+cursor: pointer;
+}
+
+.btn-cart__img:hover, a:focus, a:active {
+	opacity: .6;
+	transition: .2s all;
+}
+
+.headerBasket {
+	position: relative;
+
+}
+.basket{
+	margin-top: 25px;
+	position: absolute;
+	z-index: 3;
+	right: 0;
+	top: 54px;
+	background: white;
+	padding: 10px;
+	border: 1px solid #ebebeb;
+	border-radius: 3px;
+	font-size: 14px;
+	width: 500px;
+	box-shadow: 0px 3px 6px 1px rgb(0 0 0 / 29%);
+}
+
+.basket__hidden{
+	display: none;
+	width: 400px;
+}
+
+.cart-item:not(:last-child) {
+	margin-bottom: 45px;
+}
+
+.product-none{
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+}
+
+.product-bio {
+	display: flex;
+}
+
+.cart-item:not(:last-child) {
+	margin-bottom: 45px;
+}
+
+.cart-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-title__basket{
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.cart-item img {
+	align-self: flex-start;
+	max-width: 60px;
+}
+
+.product-desc {
+	max-width: 150px;
+	margin-left: 150px;
+}
+
+.product-quantity {
+	margin-top: 15px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.product-single-price {
+	color: #5b5d9f;
+	font-size: 14px;
+}
+
+.product-price__cart{
+	font-size: 16px;
+	font-weight: 700;
+	color: #5b5d9f;	
+}
+
+.right-block {
+	text-align: right;
+}
+
+.product-price {
+	margin-left: 30px;
+}
+
+.product-price_basket{
+	color: #474747;
+	font-size: 12px;
+}
+
+.buy-btn, .del-btn {
+	margin-top: 5px;
+	background-color: #2f2a2d;
+	padding: 5px 15px;
+	border: 1px solid transparent;
+	color: #fafafa;
+	border-radius: 5px;
+	transition: all ease-in-out .4s;
+	cursor: pointer;
+}
+
+.buy-btn:hover, .del-btn:hover {
+	background-color: #fafafa;
+	color: #2f2a2d;
+	border: 1px solid #2f2a2d;
+}
+
+
+
+.btn-search {
+	background-color: transparent;
+	border: none;
+	color: #fafafa;
+	font-size: 1.2em;
+	position: absolute;
+	bottom: 5px;
+	right: 0;
+}
+.search-form{
+	position: relative;
+	margin-right: 100px;
+	display: inline-block;
+}
+.search-field:focus{
+	outline: none;
+}
+.search-field {
+	box-sizing: border-box;
+	width: 200px;
+	color: #fafafa;
+	padding: 10px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #fafafa;
+}
+
+
+
+
+
+
+.headerBasketCount {
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	color: white;
+	background: #f16d7f;
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	right: -8px;
+	top: -19px;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.hidden {
+	display: none;
+}
+
+.products{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	row-gap: 45px;
+	column-gap: 45px;
+	width: 80%;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 95px;
+	
+}
+
+.product-item{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background: white;
+	padding: 20px;
+	box-shadow: 0px 3px 6px 1px rgb(0 0 0 / 29%);
+	border-radius: 3px;
+	
+}
+
+.product-title{
+margin-bottom: auto;
+font-size: 20px;
+text-transform: uppercase;
+}
+
+.product-img{
+width: 100%;
+height: 270px;
+object-fit: contain;
+}
+
+.product-price{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	color: #a49e9f;
+}
+
+.product__buy-btn{
+padding: 10px 15px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+outline: none;
+background: none;
+font-family: inherit;
+font-size: inherit;
+font-weight: 700;
+box-shadow: 0px 4px 5px 1px rgb(0 0 0 / 50%);
+transition: all ease-in-out .4s;
+
+}
+
+.product__buy-btn:hover{
+	background: red;
+	color: white;
+}
+
+.product__buy-btn_active{
+	border: 1px solid transparent;
+	background-color: #F16D7F;
+
+}
+
+.footer{
+	min-height: 55px;
+	background-color: #5b5d9f;
+}
+
+h4{
+	padding-top: 20px;
+	color: white;
+}
